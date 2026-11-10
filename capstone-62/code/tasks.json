@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Setup Python 3.12 virtual environment",
+    "priority": "high",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "title": "Build CLI subcommand parser with argparse",
+    "priority": "high",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "title": "Write unit tests for JSON persistence",
+    "priority": "medium",
+    "completed": false
+  }
+]

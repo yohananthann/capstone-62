@@ -1,0 +1,91 @@
+{
+  "reference_date": "2026-10-15",
+  "total_items": 6,
+  "overdue": [
+    {
+      "id": "5",
+      "title": "Demystifying Python Generators and Iterators",
+      "topic": "Advanced Python Concepts",
+      "status": "Drafting",
+      "planned_date": "2026-10-12",
+      "days_remaining": -3,
+      "draft_location": "blogs/backlog/post-generators.md",
+      "author": "Alex Chen",
+      "reviewer": "Prof. Sarah Jenkins",
+      "verification_status": "Action Needed",
+      "priority": "Low"
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "1",
+      "title": "Build Your First Python CLI Application: A Step-by-Step Guide",
+      "topic": "Python Development: Beginner to Practical",
+      "status": "Drafting",
+      "planned_date": "2026-10-18",
+      "days_remaining": 3,
+      "draft_location": "blogs/post-1-python-cli.md",
+      "author": "Alex Chen",
+      "reviewer": "Prof. Sarah Jenkins",
+      "verification_status": "Verified",
+      "priority": "High"
+    },
+    {
+      "id": "4",
+      "title": "Mastering Virtual Environments and Dependency Pinning",
+      "topic": "Python Tooling and Best Practices",
+      "status": "In Review",
+      "planned_date": "2026-10-16",
+      "days_remaining": 1,
+      "draft_location": "blogs/backlog/post-venv-pinning.md",
+      "author": "Alex Chen",
+      "reviewer": "Senior Peer Reviewer",
+      "verification_status": "Pending Verification",
+      "priority": "Urgent"
+    }
+  ],
+  "verification_blockers": [
+    {
+      "id": "4",
+      "title": "Mastering Virtual Environments and Dependency Pinning",
+      "topic": "Python Tooling and Best Practices",
+      "status": "In Review",
+      "planned_date": "2026-10-16",
+      "days_remaining": 1,
+      "draft_location": "blogs/backlog/post-venv-pinning.md",
+      "author": "Alex Chen",
+      "reviewer": "Senior Peer Reviewer",
+      "verification_status": "Pending Verification",
+      "priority": "Urgent"
+    },
+    {
+      "id": "5",
+      "title": "Demystifying Python Generators and Iterators",
+      "topic": "Advanced Python Concepts",
+      "status": "Drafting",
+      "planned_date": "2026-10-12",
+      "days_remaining": -3,
+      "draft_location": "blogs/backlog/post-generators.md",
+      "author": "Alex Chen",
+      "reviewer": "Prof. Sarah Jenkins",
+      "verification_status": "Action Needed",
+      "priority": "Low"
+    }
+  ],
+  "in_review": [
+    {
+      "id": "4",
+      "title": "Mastering Virtual Environments and Dependency Pinning",
+      "topic": "Python Tooling and Best Practices",
+      "status": "In Review",
+      "planned_date": "2026-10-16",
+      "days_remaining": 1,
+      "draft_location": "blogs/backlog/post-venv-pinning.md",
+      "author": "Alex Chen",
+      "reviewer": "Senior Peer Reviewer",
+      "verification_status": "Pending Verification",
+      "priority": "Urgent"
+    }
+  ],
+  "published": []
+}

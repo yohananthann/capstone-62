@@ -1,0 +1,7 @@
+id,title,topic,planned_date,status,draft_location,author,reviewer,verification_status,priority
+1,Build Your First Python CLI Application: A Step-by-Step Guide,Python Development: Beginner to Practical,2026-10-18,Drafting,blogs/post-1-python-cli.md,Alex Chen,Prof. Sarah Jenkins,Verified,High
+2,Five Common Python Errors and How to Debug Them,Python Development: Beginner to Practical,2026-10-22,Drafting,blogs/post-2-python-errors.md,Alex Chen,Prof. Sarah Jenkins,Verified,Medium
+3,Writing Better Python Code with Functions and Unit Tests,Python Development: Beginner to Practical,2026-10-25,Idea,blogs/post-3-functions-testing.md,Alex Chen,Prof. Sarah Jenkins,Pending Verification,High
+4,Mastering Virtual Environments and Dependency Pinning,Python Tooling and Best Practices,2026-10-16,In Review,blogs/backlog/post-venv-pinning.md,Alex Chen,Senior Peer Reviewer,Pending Verification,Urgent
+5,Demystifying Python Generators and Iterators,Advanced Python Concepts,2026-10-12,Drafting,blogs/backlog/post-generators.md,Alex Chen,Prof. Sarah Jenkins,Action Needed,Low
+6,Building Resilient Microservices with Python and FastAPI,Backend Engineering Series,2026-11-05,Idea,blogs/backlog/post-fastapi.md,Alex Chen,Tech Lead Mentor,Pending Verification,Medium

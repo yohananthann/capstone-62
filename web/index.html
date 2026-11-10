@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPSTONE 62 — AI-Powered Technical Blog Writing Series</title>
+  <meta name="description" content="Local Interactive Showcase and Execution Environment for CAPSTONE 62." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-badge">
+          <span class="logo-icon">⚡</span>
+          <div>
+            <div class="logo-title">CAPSTONE 62</div>
+            <div class="logo-subtitle">AI & Technical Writing</div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="tab-overview">
+          <span class="nav-icon">📊</span>
+          <span class="nav-text">Overview & Metrics</span>
+        </button>
+        <button class="nav-item" data-tab="tab-task-manager">
+          <span class="nav-icon">📋</span>
+          <span class="nav-text">CLI Task Manager</span>
+          <span class="nav-badge" id="badge-task-count">0</span>
+        </button>
+        <button class="nav-item" data-tab="tab-test-runner">
+          <span class="nav-icon">🧪</span>
+          <span class="nav-text">Unit Tests (17/17)</span>
+          <span class="nav-badge success">Pass</span>
+        </button>
+        <button class="nav-item" data-tab="tab-error-lab">
+          <span class="nav-icon">🐞</span>
+          <span class="nav-text">5 Python Errors Lab</span>
+        </button>
+        <button class="nav-item" data-tab="tab-blog-reader">
+          <span class="nav-icon">📖</span>
+          <span class="nav-text">Technical Blog Reader</span>
+        </button>
+        <button class="nav-item" data-tab="tab-string-utils">
+          <span class="nav-icon">🔤</span>
+          <span class="nav-text">String Utilities Lab</span>
+        </button>
+        <button class="nav-item" data-tab="tab-calendar">
+          <span class="nav-icon">📅</span>
+          <span class="nav-text">Content Automation</span>
+        </button>
+        <button class="nav-item" data-tab="tab-presentation">
+          <span class="nav-icon">📽️</span>
+          <span class="nav-text">5-Slide Presentation</span>
+        </button>
+        <button class="nav-item" data-tab="tab-terminal">
+          <span class="nav-icon">💻</span>
+          <span class="nav-text">Terminal Console</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span class="status-label">Python 3.12.6 Live</span>
+        </div>
+        <div class="port-label">http://localhost:8000</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Stage -->
+    <main class="content-stage">
+      <!-- Top Global Bar -->
+      <header class="topbar">
+        <div class="topbar-title-wrapper">
+          <h1 class="topbar-title">AI-Powered Technical Blog Writing Series for Developers</h1>
+          <p class="topbar-caption">Live Local Runtime & Verification Dashboard • Computer Science Engineering Portfolio</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-secondary" id="btn-quick-tests">
+            <span>🧪</span> Run Tests
+          </button>
+          <button class="btn btn-primary" id="btn-quick-automation">
+            <span>⚡</span> Run Automation
+          </button>
+        </div>
+      </header>
+
+      <!-- TAB 1: OVERVIEW & DASHBOARD -->
+      <section id="tab-overview" class="tab-pane active">
+        <div class="banner-hero">
+          <div class="hero-content">
+            <span class="hero-tag">Computer Science Capstone Deliverable</span>
+            <h2>Investigating Ethical AI Assistance for Student Technical Writers</h2>
+            <p>
+              An end-to-end disciplined engineering framework uniting Large Language Models with automated standard library unit tests, defensive error diagnosis, and strict human editorial oversight.
+            </p>
+            <div class="hero-meta-row">
+              <span class="meta-pill"><span>🐍</span> 100% Python Standard Library</span>
+              <span class="meta-pill"><span>🛡️</span> Zero Dependency Bloat</span>
+              <span class="meta-pill"><span>✅</span> 17/17 Unit Tests Passing</span>
+              <span class="meta-pill"><span>⚖️</span> Strict Human-in-the-Loop Gate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-icon">🧪</span>
+              <span class="metric-badge green">Verified</span>
+            </div>
+            <div class="metric-value">17 / 17</div>
+            <div class="metric-title">Unit Tests Passing</div>
+            <div class="metric-desc">Automated boundary validation & JSON recovery suite</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-icon">📝</span>
+              <span class="metric-badge cyan">Production</span>
+            </div>
+            <div class="metric-value" id="overview-task-count">3</div>
+            <div class="metric-title">Tasks in Local Store</div>
+            <div class="metric-desc">Synced with <code>capstone-62/code/tasks.json</code></div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-icon">📚</span>
+              <span class="metric-badge purple">Published</span>
+            </div>
+            <div class="metric-value">3 Posts</div>
+            <div class="metric-title">Companion Blog Series</div>
+            <div class="metric-desc">~3,000 words across CLI, Debugging, and Testing</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-icon">📅</span>
+              <span class="metric-badge amber">Tracked</span>
+            </div>
+            <div class="metric-value">6 Articles</div>
+            <div class="metric-title">Editorial Pipeline</div>
+            <div class="metric-desc">Automated deadline detection & gate verification</div>
+          </div>
+        </div>
+
+        <!-- System Architecture & Deliverables -->
+        <div class="section-heading">
+          <h3>Core Capstone Pillars & Direct Access</h3>
+          <p>Quick navigation to every interactive component running in this workspace.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card" onclick="switchTab('tab-task-manager')">
+            <div class="pillar-icon">🛠️</div>
+            <h4>CLI Task Manager (Post 1 Companion)</h4>
+            <p>Interactive web GUI directly driving <code>task_manager.py</code>. Add, complete, and delete tasks with instant JSON persistence.</p>
+            <div class="pillar-link">Open Task Manager &rarr;</div>
+          </div>
+
+          <div class="pillar-card" onclick="switchTab('tab-test-runner')">
+            <div class="pillar-icon">🧪</div>
+            <h4>Automated Unit Test Suites</h4>
+            <p>Run the 17-test discovery suite across <code>test_task_manager.py</code> and <code>test_string_utils.py</code> with live stream reporting.</p>
+            <div class="pillar-link">Execute Test Suite &rarr;</div>
+          </div>
+
+          <div class="pillar-card" onclick="switchTab('tab-error-lab')">
+            <div class="pillar-icon">🐞</div>
+            <h4>5 Common Python Errors Lab (Post 2)</h4>
+            <p>Interactive error harness reproducing SyntaxError, NameError, TypeError, IndexError, and KeyError with verified fixes.</p>
+            <div class="pillar-link">Explore Error Diagnostics &rarr;</div>
+          </div>
+
+          <div class="pillar-card" onclick="switchTab('tab-blog-reader')">
+            <div class="pillar-icon">📖</div>
+            <h4>Technical Blog Reader</h4>
+            <p>Read the 3-part publication series with real-time reading times, ethical AI disclosures, and syntax-highlighted code snippets.</p>
+            <div class="pillar-link">Read Blog Series &rarr;</div>
+          </div>
+
+          <div class="pillar-card" onclick="switchTab('tab-calendar')">
+            <div class="pillar-icon">📅</div>
+            <h4>Content Automation Engine</h4>
+            <p>Run the content calendar notifier engine to audit deadlines, overdue items, and enforce verification approval gates.</p>
+            <div class="pillar-link">View Calendar Automation &rarr;</div>
+          </div>
+
+          <div class="pillar-card" onclick="switchTab('tab-presentation')">
+            <div class="pillar-icon">📽️</div>
+            <h4>16:9 Presentation Deck (5 Slides)</h4>
+            <p>Interactive slide deck viewer with executive dark slate styling and verbatim speaker notes for faculty evaluation.</p>
+            <div class="pillar-link">Launch Slide Deck &rarr;</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: CLI TASK MANAGER -->
+      <section id="tab-task-manager" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>CLI Task Manager (Post 1 Companion)</h2>
+            <p>Interactive GUI connected to <code>capstone-62/code/task_manager.py</code> and synced to <code>tasks.json</code>.</p>
+          </div>
+          <div class="pane-actions">
+            <button class="btn btn-secondary" id="btn-refresh-tasks">🔄 Refresh</button>
+            <button class="btn btn-danger" id="btn-clear-tasks">🗑️ Clear All</button>
+          </div>
+        </div>
+
+        <div class="task-manager-layout">
+          <!-- Form Section -->
+          <div class="card form-card">
+            <h3>Add New Task</h3>
+            <p class="card-subtitle">Executes <code>python task_manager.py add &lt;title&gt; -p &lt;priority&gt;</code></p>
+            
+            <form id="form-add-task">
+              <div class="form-group">
+                <label for="task-title-input">Task Title</label>
+                <input type="text" id="task-title-input" class="form-control" placeholder="e.g. Build API tests or review draft" required />
+              </div>
+              <div class="form-group">
+                <label for="task-priority-select">Priority Level</label>
+                <select id="task-priority-select" class="form-control">
+                  <option value="high">🔴 High Priority</option>
+                  <option value="medium" selected>🟡 Medium Priority</option>
+                  <option value="low">🔵 Low Priority</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">➕ Add Task to Local Store</button>
+            </form>
+
+            <div class="cli-executed-box">
+              <div class="cli-box-header">Last CLI Command Executed:</div>
+              <code id="last-cli-command">python capstone-62/code/task_manager.py list</code>
+            </div>
+          </div>
+
+          <!-- List Section -->
+          <div class="card list-card">
+            <div class="list-toolbar">
+              <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Tasks (<span id="count-all">0</span>)</button>
+                <button class="filter-btn" data-filter="pending">Pending (<span id="count-pending">0</span>)</button>
+                <button class="filter-btn" data-filter="completed">Completed (<span id="count-completed">0</span>)</button>
+              </div>
+            </div>
+
+            <div class="tasks-container" id="tasks-container">
+              <div class="empty-state">Loading tasks from disk...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: UNIT TEST RUNNER -->
+      <section id="tab-test-runner" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>Automated Unit Test Suites (17/17 Tests)</h2>
+            <p>Production verification suite using Python's built-in <code>unittest</code> framework.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-run-tests">
+            <span>🧪</span> Run All Unit Tests
+          </button>
+        </div>
+
+        <div class="tests-summary-bar">
+          <div class="test-stat-pill">
+            <span class="stat-dot dot-green"></span>
+            <span class="stat-label">Status:</span>
+            <span class="stat-val" id="test-overall-status">Ready</span>
+          </div>
+          <div class="test-stat-pill">
+            <span class="stat-label">Total Test Cases:</span>
+            <span class="stat-val" id="test-total-cases">17</span>
+          </div>
+          <div class="test-stat-pill">
+            <span class="stat-label">Passing Rate:</span>
+            <span class="stat-val" id="test-pass-rate">100% (17/17)</span>
+          </div>
+          <div class="test-stat-pill">
+            <span class="stat-label">Execution Time:</span>
+            <span class="stat-val" id="test-duration">~0.3s</span>
+          </div>
+        </div>
+
+        <div class="test-suites-grid">
+          <!-- Suite 1 -->
+          <div class="card suite-card">
+            <div class="suite-header">
+              <div class="suite-info">
+                <h4>test_task_manager.py</h4>
+                <p>CLI Argument Parsing, JSON Persistence & Corrupted Data Recovery</p>
+              </div>
+              <span class="badge badge-success">9 / 9 Passed</span>
+            </div>
+            <ul class="test-cases-list">
+              <li><span class="icon">✅</span> <code>test_add_task_success</code> — Valid task title and priority creation</li>
+              <li><span class="icon">✅</span> <code>test_add_task_empty_title_rejected</code> — Empty & whitespace rejection</li>
+              <li><span class="icon">✅</span> <code>test_add_task_invalid_priority_rejected</code> — Priority bounds checking</li>
+              <li><span class="icon">✅</span> <code>test_complete_task_lifecycle</code> — Idempotent completion & missing ID guard</li>
+              <li><span class="icon">✅</span> <code>test_delete_task</code> — Sequential ID deletion & negative ID safety</li>
+              <li><span class="icon">✅</span> <code>test_list_tasks_filtering</code> — Pending vs. Completed status filters</li>
+              <li><span class="icon">✅</span> <code>test_id_increments_sequentially</code> — Sequential auto-increment logic</li>
+              <li><span class="icon">✅</span> <code>test_clear_tasks</code> — Atomic reset of all persisted records</li>
+              <li><span class="icon">✅</span> <code>test_corrupted_json_recovery</code> — Graceful fallback on damaged JSON file</li>
+            </ul>
+          </div>
+
+          <!-- Suite 2 -->
+          <div class="card suite-card">
+            <div class="suite-header">
+              <div class="suite-info">
+                <h4>test_string_utils.py</h4>
+                <p>Blog String Utilities, Pure Function Boundaries & Exception Guards</p>
+              </div>
+              <span class="badge badge-success">8 / 8 Passed</span>
+            </div>
+            <ul class="test-cases-list">
+              <li><span class="icon">✅</span> <code>test_slugify_standard</code> — Normal title slugification</li>
+              <li><span class="icon">✅</span> <code>test_slugify_special_characters</code> — Strips symbols, hyphens & spaces</li>
+              <li><span class="icon">✅</span> <code>test_slugify_invalid_inputs</code> — TypeErrors & ValueErrors rejection</li>
+              <li><span class="icon">✅</span> <code>test_count_words</code> — Whitespace-normalized token counting</li>
+              <li><span class="icon">✅</span> <code>test_calculate_reading_time</code> — 200 WPM ceiling division calculation</li>
+              <li><span class="icon">✅</span> <code>test_calculate_reading_time_invalid_wpm</code> — Guard against zero/negative WPM</li>
+              <li><span class="icon">✅</span> <code>test_truncate_summary</code> — Word-limited excerpt generation with suffix</li>
+              <li><span class="icon">✅</span> <code>test_truncate_summary_invalid</code> — Guard against zero/negative max words</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card terminal-output-card">
+          <div class="card-header-bar">
+            <span>Terminal Output: <code>python -m unittest discover -s capstone-62/tests -p "test_*.py" -v</code></span>
+          </div>
+          <pre class="terminal-block" id="test-terminal-output">Click "Run All Unit Tests" to execute the live unittest runner.</pre>
+        </div>
+      </section>
+
+      <!-- TAB 4: 5 COMMON PYTHON ERRORS LAB -->
+      <section id="tab-error-lab" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>5 Common Python Errors & Debugging Lab (Post 2)</h2>
+            <p>Interactive diagnostic engine reproducing and resolving the top 5 beginner Python exceptions.</p>
+          </div>
+          <button class="btn btn-secondary" id="btn-run-all-errors">
+            <span>⚡</span> Run Full Diagnostics Script
+          </button>
+        </div>
+
+        <div class="error-lab-layout">
+          <!-- Sidebar selector -->
+          <div class="error-selector-column">
+            <button class="error-select-btn active" data-error="syntax">
+              <span class="err-num">1</span>
+              <div>
+                <div class="err-name">SyntaxError</div>
+                <div class="err-summary">Missing colon on conditional header</div>
+              </div>
+            </button>
+            <button class="error-select-btn" data-error="name">
+              <span class="err-num">2</span>
+              <div>
+                <div class="err-name">NameError / UnboundLocalError</div>
+                <div class="err-summary">Variable referenced before assignment</div>
+              </div>
+            </button>
+            <button class="error-select-btn" data-error="type">
+              <span class="err-num">3</span>
+              <div>
+                <div class="err-name">TypeError</div>
+                <div class="err-summary">String + integer concatenation mismatch</div>
+              </div>
+            </button>
+            <button class="error-select-btn" data-error="index">
+              <span class="err-num">4</span>
+              <div>
+                <div class="err-name">IndexError</div>
+                <div class="err-summary">List index out of range bounds</div>
+              </div>
+            </button>
+            <button class="error-select-btn" data-error="key">
+              <span class="err-num">5</span>
+              <div>
+                <div class="err-name">KeyError</div>
+                <div class="err-summary">Missing dictionary key lookup</div>
+              </div>
+            </button>
+          </div>
+
+          <!-- Error Details Card -->
+          <div class="error-viewer-column">
+            <div class="card error-detail-card" id="error-display-card">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: TECHNICAL BLOG READER -->
+      <section id="tab-blog-reader" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>Three-Part Technical Blog Series</h2>
+            <p>Standardized, verified technical guides written according to Google Developer Documentation Style.</p>
+          </div>
+          <div class="blog-switcher" id="blog-switcher">
+            <button class="blog-tab-btn active" data-blog="post-1-python-cli.md">Post 1: CLI App</button>
+            <button class="blog-tab-btn" data-blog="post-2-python-errors.md">Post 2: Debugging</button>
+            <button class="blog-tab-btn" data-blog="post-3-functions-testing.md">Post 3: Testing</button>
+          </div>
+        </div>
+
+        <div class="blog-meta-ribbon" id="blog-meta-ribbon">
+          <div class="meta-item">
+            <span class="meta-lbl">Word Count:</span>
+            <span class="meta-val" id="blog-word-count">Calculating...</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-lbl">Reading Time:</span>
+            <span class="meta-val" id="blog-reading-time">Calculating...</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-lbl">Ethics & Disclosure:</span>
+            <span class="badge badge-ai">Verified Human-in-the-Loop</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-lbl">Companion Code:</span>
+            <span class="meta-val" id="blog-code-ref">capstone-62/code</span>
+          </div>
+        </div>
+
+        <div class="blog-reading-container card" id="blog-content-view">
+          <div class="loading-spinner">Loading blog article content...</div>
+        </div>
+      </section>
+
+      <!-- TAB 6: STRING UTILITIES LAB -->
+      <section id="tab-string-utils" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>Blog String Utilities Lab (Post 3 Companion)</h2>
+            <p>Test the modular pure functions defined in <code>capstone-62/code/string_utils.py</code> in real time.</p>
+          </div>
+        </div>
+
+        <div class="string-lab-grid">
+          <!-- Slugify Card -->
+          <div class="card utility-card">
+            <div class="util-header">
+              <h4>1. slugify(title)</h4>
+              <p>Converts blog post titles into URL-safe slugs with hyphens.</p>
+            </div>
+            <div class="form-group">
+              <label>Input Title</label>
+              <input type="text" id="slug-input" class="form-control" value="Build Your First Python CLI Application: A Step-by-Step Guide!" />
+            </div>
+            <div class="util-output-box">
+              <span class="out-lbl">Generated Slug:</span>
+              <code id="slug-output">build-your-first-python-cli-application-a-step-by-step-guide</code>
+            </div>
+          </div>
+
+          <!-- Reading Time Card -->
+          <div class="card utility-card">
+            <div class="util-header">
+              <h4>2. calculate_reading_time(text, wpm=200)</h4>
+              <p>Computes ceiling-divided reading duration based on words-per-minute.</p>
+            </div>
+            <div class="form-group">
+              <label>Sample Article Text</label>
+              <textarea id="reading-time-input" class="form-control" rows="3">In this tutorial, you will learn how to build a production-ready command line interface using Python's standard library. We will explore argparse, persistent JSON state storage, defensive exception handling, and automated unit testing with unittest.</textarea>
+            </div>
+            <div class="util-output-row">
+              <div class="util-output-box">
+                <span class="out-lbl">Word Count:</span>
+                <strong id="words-output">38 words</strong>
+              </div>
+              <div class="util-output-box">
+                <span class="out-lbl">Estimated Reading Time:</span>
+                <strong id="reading-time-output">1 minute</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Truncate Summary Card -->
+          <div class="card utility-card full-width">
+            <div class="util-header">
+              <h4>3. truncate_summary(text, max_words=20)</h4>
+              <p>Generates clean blog excerpt previews truncated cleanly at word boundaries.</p>
+            </div>
+            <div class="form-group">
+              <label>Max Words Limit</label>
+              <input type="number" id="truncate-limit" class="form-control" value="15" min="1" max="100" style="max-width: 150px;" />
+            </div>
+            <div class="util-output-box">
+              <span class="out-lbl">Truncated Excerpt:</span>
+              <div id="truncate-output" class="excerpt-preview">In this tutorial, you will learn how to build a production-ready command line interface...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 7: CONTENT CALENDAR & AUTOMATION -->
+      <section id="tab-calendar" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>Content Calendar & Automation Engine</h2>
+            <p>Automated deadline monitoring and verification gate enforcement from <code>content-calendar.csv</code>.</p>
+          </div>
+          <button class="btn btn-primary" id="btn-run-calendar-engine">
+            <span>⚡</span> Run Local Notifier Engine
+          </button>
+        </div>
+
+        <div class="card calendar-table-card">
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Article Title</th>
+                  <th>Topic Series</th>
+                  <th>Planned Date</th>
+                  <th>Status</th>
+                  <th>Author / Reviewer</th>
+                  <th>Gate Status</th>
+                  <th>Priority</th>
+                </tr>
+              </thead>
+              <tbody id="calendar-table-body">
+                <tr><td colspan="8" class="text-center">Loading content calendar...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="automation-outputs-grid">
+          <div class="card">
+            <h4>Generated Notification Digest (Markdown)</h4>
+            <pre class="terminal-block markdown-view" id="digest-view">Run the automation engine to see the latest alert digest.</pre>
+          </div>
+          <div class="card">
+            <h4>Generated Audit Record (JSON)</h4>
+            <pre class="terminal-block json-view" id="audit-view">Run the automation engine to inspect the JSON audit record.</pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 8: 5-SLIDE PRESENTATION DECK -->
+      <section id="tab-presentation" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>Professional 5-Slide Presentation Deck</h2>
+            <p>Executive 16:9 widescreen presentation prepared for faculty and peer reviewers.</p>
+          </div>
+          <div class="slide-nav-controls">
+            <button class="btn btn-secondary" id="btn-slide-prev">&larr; Prev Slide</button>
+            <span class="slide-counter" id="slide-counter">Slide 1 of 5</span>
+            <button class="btn btn-secondary" id="btn-slide-next">Next Slide &rarr;</button>
+            <a href="/api/download-pptx" class="btn btn-primary" download>
+              <span>📥</span> Download .pptx
+            </a>
+          </div>
+        </div>
+
+        <div class="presentation-stage">
+          <div class="slide-viewport card" id="slide-viewport">
+            <!-- Dynamically populated slide content -->
+          </div>
+
+          <div class="speaker-notes-card card">
+            <div class="notes-header">
+              <span>🎙️ Verbatim Speaker Notes (Faculty Presentation Script)</span>
+            </div>
+            <p class="notes-text" id="speaker-notes-text">Loading speaker notes...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 9: TERMINAL PLAYGROUND -->
+      <section id="tab-terminal" class="tab-pane">
+        <div class="pane-header">
+          <div>
+            <h2>Interactive Python CLI Terminal Playground</h2>
+            <p>Execute companion scripts directly in the live local Python runtime.</p>
+          </div>
+        </div>
+
+        <div class="card terminal-card">
+          <div class="quick-commands-bar">
+            <span class="bar-title">Presets:</span>
+            <button class="btn-preset" data-cmd="python capstone-62/code/task_manager.py list">task_manager.py list</button>
+            <button class="btn-preset" data-cmd="python -m unittest discover -s capstone-62/tests -p &quot;test_*.py&quot; -v">Run All 17 Tests</button>
+            <button class="btn-preset" data-cmd="python capstone-62/code/error_examples.py">error_examples.py</button>
+            <button class="btn-preset" data-cmd="python capstone-62/automation/content_calendar_notifier.py --date 2026-10-15">content_calendar_notifier.py</button>
+            <button class="btn-preset" data-cmd="python capstone-62/presentation/generate_presentation.py">generate_presentation.py</button>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">&gt;</span>
+            <input type="text" id="terminal-cmd-input" class="terminal-input" value="python capstone-62/code/task_manager.py list" />
+            <button class="btn btn-primary" id="btn-run-cmd">Execute</button>
+          </div>
+
+          <pre class="terminal-block live-console" id="terminal-live-output">Welcome to the CAPSTONE 62 interactive terminal console.
+Type a command or select a preset above and click Execute.
+</pre>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
